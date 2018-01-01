@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto");
+.Navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .Navbar .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    height: 80px; }
+    .Navbar .top .group1 {
+      width: 43%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center; }
+      .Navbar .top .group1 h1 {
+        font-family: "Playfair Display", serif;
+        color: #F56400;
+        font-size: 1.99em;
+        width: auto;
+        height: 40px; }
+      .Navbar .top .group1 .inputbtn {
+        width: 75%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 5px; }
+        .Navbar .top .group1 .inputbtn .input {
+          width: calc(100% - 79.17px);
+          height: 35px;
+          background-color: #f9f9f8;
+          border: 1px solid #CFCBC8;
+          font-size: 14px;
+          box-sizing: border-box;
+          box-shadow: inset 0 1px 2px #E9E9E8, 0 0 0 1000px #fbfbfa inset;
+          border-radius: 3px;
+          overflow: hidden;
+          font-family: "Roboto", sans-serif;
+          padding: 6px 10px; }
+        .Navbar .top .group1 .inputbtn .button1 {
+          width: 79.17px;
+          height: 35px;
+          font-family: "Roboto", sans-serif;
+          font-size: 14px;
+          color: white;
+          background-color: #F56400;
+          border: none;
+          box-sizing: border-box;
+          border-radius: 3px;
+          border-top: 1px solid #CFCBC8;
+          border-right: 1px solid #CFCBC8;
+          border-bottom: 1px solid #CFCBC8; }
+    .Navbar .top .group2 {
+      width: 57%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      font-family: "Roboto", sans-serif;
+      color: #F56400;
+      align-items: center; }
+      .Navbar .top .group2 .links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 42%;
+        height: 100%;
+        justify-content: space-around;
+        font-size: 14px; }
+        .Navbar .top .group2 .links .link {
+          display: flex;
+          align-items: center;
+          height: 35px;
+          width: auto;
+          white-space: nowrap;
+          margin-right: 15px;
+          text-decoration: none;
+          color: #F56400; }
+        .Navbar .top .group2 .links .link:hover {
+          text-decoration: underline; }
+        .Navbar .top .group2 .links .button2 {
+          width: 79.17px;
+          height: 35px;
+          font-size: 14px;
+          border: none;
+          box-sizing: border-box;
+          border-radius: 3px;
+          border: 1px solid #F56400;
+          white-space: nowrap;
+          color: #F56400; }
+    .Navbar .top .cart-holder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: gray;
+      border-left: solid 1px gray;
+      margin-left: 15px;
+      padding-left: 15px; }
+  .Navbar .bottom {
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: solid 1px #dadada;
+    border-bottom: solid 1px #dadada;
+    font-family: "Roboto", sans-serif;
+    color: #505050;
+    font-size: 14px;
+    letter-spacing: .5px; }
+    .Navbar .bottom .category {
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: center;
+      align-items: center;
+      padding: 10px;
+      color: #242424; }
+    .Navbar .bottom .category:hover {
+      border-bottom: solid 2px #F56400; }
+
+.linkF {
+  color: #242424; }

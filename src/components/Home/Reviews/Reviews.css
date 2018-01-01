@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto");
+.Reviews {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif; }
+  .Reviews span {
+    text-align: center;
+    color: #242424;
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    height: 5%;
+    margin-top: 5px; }
+  .Reviews .hold-reviews {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .Reviews .hold-reviews .container {
+      width: 25%;
+      height: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: space-around;
+      font-size: 18px;
+      color: #242424; }
+      .Reviews .hold-reviews .container .desc {
+        text-align: center; }
+      .Reviews .hold-reviews .container img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; }
+      .Reviews .hold-reviews .container .link {
+        color: #242424;
+        font-size: 14px; }
+      .Reviews .hold-reviews .container .star {
+        color: #F56400; }

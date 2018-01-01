@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto");
+.Jewelry {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  border: solid 1px #dadada;
+  width: 45%;
+  font-family: "Roboto", sans-serif;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-transform: uppercase;
+  font-size: 16px; }
+  .Jewelry h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid 1px #dadada;
+    padding: 15px;
+    font-weight: bolder; }
+  .Jewelry h1:hover {
+    text-decoration: underline;
+    color: #242424; }
+  .Jewelry .selector {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    font-weight: lighter;
+    opacity: .75; }
+  .Jewelry .selector:hover {
+    background-color: peachpuff;
+    color: #242424; }
+  .Jewelry .all {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    padding: 15px;
+    font-weight: bolder;
+    border-top: solid 1px #dadada; }
+  .Jewelry .all:hover {
+    text-decoration: underline;
+    color: black; }

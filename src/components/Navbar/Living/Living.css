@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto");
+.Living {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  border: solid 1px #dadada;
+  width: 45%;
+  font-family: "Roboto", sans-serif;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-transform: uppercase;
+  font-size: 16px; }
+  .Living h1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid 1px #dadada;
+    padding: 15px;
+    font-weight: bolder; }
+  .Living h1:hover {
+    text-decoration: underline; }
+  .Living .selector {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    font-weight: lighter;
+    opacity: .75; }
+  .Living .selector:hover {
+    background-color: peachpuff; }
+  .Living .all {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    padding: 15px;
+    font-weight: bolder;
+    border-top: solid 1px #dadada; }
+  .Living .all:hover {
+    text-decoration: underline; }
