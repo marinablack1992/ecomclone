@@ -9,7 +9,7 @@ let data = [
         image: 'https://img1.etsystatic.com/166/0/13655435/il_340x270.1111923931_i1bj.jpg',
         price: 280,
         color: 'rose gold',
-        type: 'handmade',
+        type: 'vintage',
         location: 'united states',
         category: 'rings'
     },
@@ -21,7 +21,7 @@ let data = [
         image: 'https://img1.etsystatic.com/192/0/12631046/il_340x270.1308035703_lulg.jpg',
         price: 87,
         color: 'gold',
-        type: 'handmade',
+        type: 'vintage',
         location: 'anywhere',
         category: 'rings'
     },
@@ -46,7 +46,7 @@ let data = [
         price: 120,
         color: 'silver',
         type: 'handmade',
-        location: 'anywhere',
+        location: 'united states',
         category: 'rings'
     },
     {
@@ -56,7 +56,7 @@ let data = [
         reviewCount: 200,
         image: 'https://img1.etsystatic.com/166/0/13655435/il_340x270.1111923931_i1bj.jpg',
         price: 25,
-        color: 'rose gold',
+        color: 'gold',
         type: 'handmade',
         location: 'united states',
         category: 'rings'
@@ -104,7 +104,7 @@ let data = [
         reviewCount: 200,
         image: 'https://img1.etsystatic.com/166/0/13655435/il_340x270.1111923931_i1bj.jpg',
         price: 50,
-        color: 'rose gold',
+        color: 'gold',
         type: 'handmade',
         location: 'united states',
         category: 'rings'
@@ -141,7 +141,7 @@ let data = [
         image: 'https://img1.etsystatic.com/174/5/6825013/il_340x270.1146628547_ki5g.jpg',
         price: 120,
         color: 'silver',
-        type: 'handmade',
+        type: 'vintage',
         location: 'anywhere',
         category: 'rings'
     }

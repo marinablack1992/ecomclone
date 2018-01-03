@@ -123,22 +123,16 @@ class Filter extends Component {
             <div className='option-box'>
                 <h1>Shop Location</h1>
                 <div className='option' onClick={() => {
-                    this.props.filterLocation('anywhere')
                     this.locationSelect('anywhere')
                     this.props.handleChange('location', 'anywhere')
-                    this.props.resetPrice()
-                    this.priceSelect('any')                                        
                 }}>
                     <div className='circle-check'>
                         <div className={this.state.anywhere ? 'circle-select' : null}></div></div>
                     <h2>Anywhere</h2>
                 </div>
                 <div className='option' onClick={() => {
-                    this.props.filterLocation('united states')
                     this.locationSelect('united states')
                     this.props.handleChange('location', 'united states')
-                    this.props.resetPrice()
-                    this.priceSelect('any')                    
                 }}>
                     <div className='circle-check'>
                         <div className={this.state.unitedStates ? 'circle-select' : null}></div></div>
@@ -149,15 +143,14 @@ class Filter extends Component {
                 <h1>Price ($)</h1>
                 <div className='option' onClick={() => {
                     this.priceSelect('any')
-                    this.props.filterPrice('any')
+                    this.props.handleChange('price', 'any')
                 }}>
                     <div className='circle-check'><div className={this.state.any ? 'circle-select' : null}></div></div>
                     <h2>Any price</h2>
                 </div>
                 <div className='option' onClick={() => {
                     this.priceSelect('under25')
-                    this.props.filterPrice('under25')
-                    
+                    this.props.handleChange('price', 'under25')
                 }}>
                     <div className='circle-check'>
                         <div className={this.state.under25 ? 'circle-select' : null}></div></div>
@@ -165,7 +158,7 @@ class Filter extends Component {
                 </div>
                 <div className='option' onClick={() => {
                     this.priceSelect('low')
-                    this.props.filterPrice('low')
+                    this.props.handleChange('price', 'low')
                 }}>
                     <div className='circle-check'>
                         <div className={this.state.low ? 'circle-select' : null}></div></div>
@@ -173,7 +166,7 @@ class Filter extends Component {
                 </div>
                 <div className='option' onClick={() => {
                     this.priceSelect('mid')
-                    this.props.filterPrice('mid')
+                    this.props.handleChange('price', 'mid')
                 }}>
                     <div className='circle-check'>
                         <div className={this.state.mid ? 'circle-select' : null}></div></div>
@@ -181,7 +174,7 @@ class Filter extends Component {
                 </div>
                 <div className='option' onClick={() => {
                     this.priceSelect('over100')
-                    this.props.filterPrice('over100')                    
+                    this.props.handleChange('price', 'over100')
                 }}>
                     <div className='circle-check'>
                         <div className={this.state.over100 ? 'circle-select' : null}></div></div>
@@ -208,6 +201,8 @@ class Filter extends Component {
                     <h2>White</h2></div>
                 <div className='option' onClick={() => {
                     this.colorSelect('gold')
+                    this.props.addColor('gold')
+                    
                 }}>
                     <div className='box-check'>
                         {this.state.gold ? <Icon className='checkmark' /> : null}
@@ -215,6 +210,8 @@ class Filter extends Component {
                     <h2>Gold</h2></div>
                 <div className='option' onClick={() => {
                     this.colorSelect('silver')
+                    this.props.addColor('silver')
+                    
                 }}>
                     <div className='box-check'>
                         {this.state.silver ? <Icon className='checkmark' /> : null}
@@ -222,6 +219,8 @@ class Filter extends Component {
                     <h2>Silver</h2></div>
                 <div className='option' onClick={() => {
                     this.colorSelect('blue')
+                    this.props.addColor('blue')
+                    
                 }}>
                     <div className='box-check'>
                         {this.state.blue ? <Icon className='checkmark' /> : null}
@@ -229,6 +228,8 @@ class Filter extends Component {
                     <h2>Blue</h2></div>
                 <div className='option' onClick={() => {
                     this.colorSelect('red')
+                    this.props.addColor('red')
+                    
                 }}>
                     <div className='box-check'>
                         {this.state.red ? <Icon className='checkmark' /> : null}
@@ -239,6 +240,8 @@ class Filter extends Component {
                 <h1>Item type</h1>
                 <div className='option' onClick={() => {
                     this.typeSelect('all')
+                    this.props.handleChange('type', 'all')                    
+                    
                 }}>
                     <div className='circle-check'>
                     <div className={this.state.allItems ? 'circle-select' : null}></div></div>
@@ -246,6 +249,7 @@ class Filter extends Component {
                 </div>
                 <div className='option' onClick={() => {
                     this.typeSelect('handmade')
+                    this.props.handleChange('type', 'handmade')
                 }}>
                     <div className='circle-check'>
                     <div className={this.state.handmade ? 'circle-select' : null}></div></div>
@@ -253,6 +257,7 @@ class Filter extends Component {
                 </div>
                 <div className='option' onClick={() => {
                     this.typeSelect('vintage')
+                    this.props.handleChange('type', 'vintage')                    
                 }}>
                     <div className='circle-check'>
                     <div className={this.state.vintage ? 'circle-select' : null}></div></div>
