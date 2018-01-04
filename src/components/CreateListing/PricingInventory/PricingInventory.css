@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Roboto");
+.PricingInventory {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  background-color: white;
+  border: solid 1px #dadada;
+  border-bottom: solid 1px #868686;
+  border-radius: 5px;
+  color: #868686;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  font-size: 1em; }
+  .PricingInventory .Pr-header {
+    height: 10%;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-top: 10px; }
+    .PricingInventory .Pr-header h1 {
+      color: #242424;
+      font-size: 1.4em;
+      margin-bottom: 10px; }
+  .PricingInventory .Pr-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    padding-left: 10px; }
+  .PricingInventory .Pr-container {
+    display: flex;
+    flex-direction: row; }
+  .PricingInventory .Pr-right {
+    width: 73%;
+    display: flex;
+    flex-direction: row; }
+    .PricingInventory .Pr-right .input {
+      width: 100px;
+      border-radius: 3px;
+      border: solid 1px #868686;
+      padding: 2px;
+      height: 25px;
+      margin-left: 5px; }
+    .PricingInventory .Pr-right .input:hover {
+      border: solid 1px #242424; }
+  .PricingInventory .Pr-left {
+    width: 25%;
+    padding-right: 20px; }
+    .PricingInventory .Pr-left .Pr-option {
+      margin-bottom: 20px; }
+    .PricingInventory .Pr-left h1 {
+      color: #242424;
+      font-size: 1.2em;
+      margin-bottom: 10px; }
+  .PricingInventory .Pr-selections {
+    display: flex;
+    flex-direction: row; }
+  .PricingInventory .Pr-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .PricingInventory .Pr-select h2 {
+      margin-right: 30px;
+      color: #242424; }
+  .PricingInventory .Pr-select:hover h2 {
+    text-decoration: underline; }
+  .PricingInventory .circle-check {
+    border: solid 1px #868686;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-right: 10px; }
+  .PricingInventory .circle-select {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #F56400; }

@@ -25,10 +25,6 @@ class JwlryAcc extends Component {
 
     multipleFilters(location, price) {
         let productData = this.state.productData
-        console.log('location: ', this.state.location)
-        console.log('price: ', this.state.price)
-        console.log('colors: ', this.state.colors)
-        console.log('type: ', this.state.type)
 
         let filterLocation = productData.filter((product, index, array) => {
             if (this.state.location === 'united states') {

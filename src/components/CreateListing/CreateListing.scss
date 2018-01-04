@@ -1,0 +1,48 @@
+@import './../../variables.scss';
+
+.CreateListing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: $roboto;
+
+    .CL-header {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        font-size: 2.4em;
+    }
+
+    .CL-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CL-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 95%;
+        margin-top: 20px;
+
+        button {
+            width: 79.17px;
+            height: 35px; 
+            font-family: $roboto;      
+            font-size: 14px;
+            color: white;
+            background-color: $orangeColor;
+            border: none;
+            box-sizing: border-box;
+            border-radius: 3px;     
+            border-top: 1px solid #CFCBC8;    
+            border-right: 1px solid #CFCBC8;
+            border-bottom: 1px solid #CFCBC8;
+        }
+    }
+}

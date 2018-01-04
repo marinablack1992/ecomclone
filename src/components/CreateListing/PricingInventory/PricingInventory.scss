@@ -1,0 +1,114 @@
+@import './../../../variables.scss';
+
+.PricingInventory {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    background-color: white;
+    border: solid 1px $lightGray;
+    border-bottom: solid 1px $gray;
+    border-radius: 5px;
+    color: $gray;
+    font-family: $roboto;
+    padding: 10px;
+    font-size: 1em;
+
+    .Pr-header {
+        height: 10%;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+
+        h1 {
+            color: $black;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+    }
+
+    .Pr-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-around;
+        padding-left: 10px;
+    }
+
+    .Pr-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Pr-right {
+        width: 73%;
+        display: flex;
+        flex-direction: row;
+
+        .input {
+            width: 100px;
+            border-radius: 3px;
+            border: solid 1px $gray;
+            padding: 2px;
+            height: 25px;
+            margin-left: 5px;
+        }
+
+        .input:hover {
+            border: solid 1px $black;
+        }
+    }
+
+    .Pr-left {
+        width: 25%;
+        padding-right: 20px;
+
+        .Pr-option {
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: $black;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+    }
+
+    .Pr-selections {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Pr-select {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        h2 {
+            margin-right: 30px;
+            color: $black;
+        }
+    }
+
+    .Pr-select:hover {
+        h2 {
+            text-decoration: underline;
+        }
+    }
+
+    .circle-check {
+        border: solid 1px $gray;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        padding: 3px;
+        margin-right: 10px;
+    }
+
+    .circle-select {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        background-color: $orangeColor;
+    }
+}
