@@ -90,6 +90,7 @@ app.post('/api/createlisting', ctrl.createListing)
 app.post('/api/addphoto', ctrl.addPhoto)
 app.get('/api/product/:id', ctrl.getProduct)
 app.get('/api/products', ctrl.getProducts)
+app.get('/api/products/:category', ctrl.getProductByCategory)
 
 const PORT = 3005;
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

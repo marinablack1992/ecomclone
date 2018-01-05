@@ -65,7 +65,6 @@ class CreateListing extends Component {
             this.setState({
                 images: updatedImages
             })
-            console.log(this.state.images)
         })
     }
 
@@ -79,9 +78,6 @@ class CreateListing extends Component {
 
     createListing() {
         let price = parseFloat(this.state.price)
-        // let images = this.state.images.map(element => {
-        //     axios.post('/api/addphoto', {image_url: '', product_id:})
-        // })
 
         let body = {
             title: this.state.title,
@@ -96,13 +92,13 @@ class CreateListing extends Component {
         }
         axios.post('/api/createlisting', body).then(response => {
             this.state.images.map(element => {
-                axios.post('/api/addphoto', { image_url: element.secure_url, product_id: response.data[response.data.length - 1].product_id })
+                axios.post('/api/addphoto', { image_url: element.secure_url, product_ref: response.data[response.data.length - 1].product_id }).then(response => {
+                })
             })
         })
     }
 
     render() {
-        console.log(this.state.images)
         return (
             <div className='CreateListing'>
                 <Navbar />
