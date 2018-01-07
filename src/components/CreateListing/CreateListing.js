@@ -8,6 +8,7 @@ import Dropzone from 'react-dropzone'
 import sha1 from 'sha1';
 import superagent from 'superagent';
 import axios from 'axios';
+import { connect } from 'react-redux'
 
 class CreateListing extends Component {
     constructor() {
@@ -24,12 +25,18 @@ class CreateListing extends Component {
             productionType: 'made-to-order',
             quantity: null,
         }
-
         this.uploadFile = this.uploadFile.bind(this);
         this.handleSelect = this.handleSelect.bind(this);
         this.handleInput = this.handleSelect.bind(this);
         this.createListing = this.createListing.bind(this);
     }
+
+    // componentDidMount() {
+    //     if (!this.props.user) {
+    //         alert('Please login to start selling on Ecom.')
+    //         this.props.history.push('/')
+    //     }
+    // }
 
     uploadFile(files) {
         const image = files[0];
@@ -127,4 +134,10 @@ class CreateListing extends Component {
     }
 }
 
-export default CreateListing
+function mapStateToProps(state) {
+    return {
+        user: state.user,
+    }
+}
+
+export default connect(mapStateToProps)(CreateListing);
